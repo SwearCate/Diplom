@@ -1,0 +1,39 @@
+<head xmlns="http://www.w3.org/1999/html">
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<h3>
+    <a href="/employee" class="btn btn-danger">
+        <i class="fa fa-plus"> </i>
+        Новая запись
+    </a>
+    Список сотрудников
+        <a href="../../index.html">
+            <i class="fa fa">
+                Вернуться
+            </i>
+        </a>
+</h3>
+<div id="employee_list">
+{{#each list}}
+    <table>
+        <div id="employee">
+            <div id="employee_table">
+                <h3 id="employee_header">Мобильный сотрудник</h3>
+                имя {{this.fullName}}
+                <h5>почта {{this.email}}</h5>
+                <h5>Номер телефона {{this.mobile}}</h5>
+                <h5>Местоположение {{this.location}}</h5>
+            </div>
+        </div>
+        <a href="/employee/{{this._id}}">
+            <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
+        </a>
+        <a href="/employee/delete/{{this._id}}" onclick="return confirm('Точно удалить?');">
+            <i class="fa fa-trash fa-lg" aria-hidden="true">
+
+            </i>
+        </a>
+    </table>
+{{/each}}
+</div>

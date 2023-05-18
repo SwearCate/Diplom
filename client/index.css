@@ -1,0 +1,310 @@
+::placeholder{
+    color: #7041CC !important;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+
+    color: #6439C3;
+
+    opacity: 0.6;
+}
+.fa-pencil:before{
+    color: #7041CC;
+}
+#map{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#zoom{
+    position: absolute;
+    width: 56px;
+    height: 109px;
+    left: 2466px;
+    top: 662px;
+
+    background: #FFFFFF;
+    box-shadow: 6px 8px 10px rgba(112, 65, 204, 0.2);
+    border-radius: 11px;
+}
+
+#zoom-in.btn{
+    position: absolute;
+    width: 23px;
+    height: 35px;
+    left: 5px;
+    top: 10px;
+
+    background: #C4C4C400;
+    text-align: center;
+    border:none;
+    color: #7041CC;
+    font-size: 30px;
+}
+i.icon-plus{
+    margin-top: 5px;
+    background-image: url("images/minus.svg");
+}
+
+#zoom-out.btn{
+    position: absolute;
+    width: 23px;
+    height: 40px;
+    left: 5px;
+    top: 64px;
+
+    background: #C4C4C400;
+    text-align: center;
+    border:none;
+    color: #7041CC;
+    font-size: 30px;
+}
+i.icon-minus{
+    margin-top: 5px;
+    color: #7041CC;
+}
+#zoom_container{
+    position: absolute;
+    width: 56px;
+    height: 109px;
+    left: 1840px;
+    top: 300px;
+
+    background: #FFFFFF;
+    box-shadow: 6px 8px 10px rgba(112, 65, 204, 0.2) !important;
+    border-radius: 11px !important;
+}
+.ymaps-2-1-79-search__suggest-item{
+    display: none !important;
+}
+.ymaps-2-1-79-float-button{
+
+    position: absolute;
+    width: 56px;
+    height: 56px !important;
+    left: 1850px;
+    top: 530px;
+
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 6px 8px 10px rgba(112, 65, 204, 0.2) !important;
+    border-radius: 11px !important;
+}
+.ymaps-2-1-79-float-button-icon{
+    width: 50px;
+    left: 10px !important;
+    top: 15px;
+}
+#search_container{
+    position: absolute;
+    width: 520px;
+    height: 78px;
+    left: 45px;
+    top: 41px;
+
+    background: linear-gradient(90deg, #653AC3 12.79%, #8F55FF 100%) !important;
+    border-radius: 26px;
+    z-index: 2000;
+
+}
+#button{
+    position: absolute;
+    width: 52px;
+    height: 59px;
+    top: 10px;
+    left: 445px;
+    border: none;
+    outline: none;
+    background: #C4C4C400;
+}
+#suggest{
+    position: absolute;
+    width: 415px;
+    height: 35px;
+    left: 15px;
+    top: 15px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #C0B3E2;
+
+    border-radius: 16px;
+}
+#container{
+    width: 100%;
+    height: 100%;
+}
+#header_button_container {
+    position: absolute;
+    width: 13%;
+    height: 5%;
+    left: 87%;
+    top: 5%;
+    z-index: 2000;
+}
+#header_link{
+    width: 3%;
+    height: 5%;
+}
+#header_link1{
+    margin-left: 20px;
+}
+#header_link2{
+    margin-left: 20px;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+#text{
+}
+#calendar{
+    z-index: 2000;
+    position: absolute;
+    width: 17%;
+    height: 36%;
+    left: 70%;
+    top: 5%;
+}
+table{
+    border-radius: 100px;
+}
+
+
+.jsCalendar-current{
+    background: linear-gradient(179.36deg, #6439C3 0.54%, #8B56FF 99.45%);
+    border-radius: 11px;
+}
+#login_container{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 3000;
+    background: rgba(0, 0, 0, 0.56);
+
+    backdrop-filter: blur(6px);
+    filter: drop-shadow(12px 13px 20px rgba(100, 57, 195, 0.15));
+
+}
+#login_form_container{
+    position: absolute;
+    width: 328px;
+    height: 426px;
+    left: 42%;
+    top: 30%;
+
+}
+#login_form{
+    position: absolute;
+    width: 328px;
+    height: 310px;
+
+    border-radius: 34px;
+    background: linear-gradient(90deg, #653AC3 12.79%, #8F55FF 100%);
+    border-radius: 34px;
+    filter: drop-shadow(5px 4px 21px rgba(0, 0, 0, 0.1));
+}
+#form_text{
+    position: absolute;
+    left: 38%;
+    top: 10%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 33px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+#email{
+    position: absolute;
+    width: 203px;
+    height: 34px;
+    left: 18%;
+    top: 30%;
+
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+#password{
+    position: absolute;
+    width: 203px;
+    height: 34px;
+    left: 18%;
+    top: 55%;
+
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+#login_button{
+    position: absolute;
+    top: 80%;
+    background: #7041CC;
+    width: 328px;
+    height: 78px;
+
+    border-radius: 34px;
+    background: linear-gradient(90deg, #653AC3 12.79%, #8F55FF 100%);
+    border-radius: 34px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 33px;
+
+    color: #FFFFFF;
+
+    filter: drop-shadow(5px 4px 21px rgba(0, 0, 0, 0.1));
+
+}
+#form_close{
+    position: absolute;
+    left: 85%;
+    top: 2%;
+}
+#employee{
+    width: 726px;
+    height: 224px;
+
+    filter: drop-shadow(5px 4px 21px rgba(0, 0, 0, 0.1));
+
+    background: #FFFFFF;
+    border-radius: 26px;
+    margin-top: 30px;
+}
+#employee_list{
+    width: 726px;
+    height: 746px;
+}
+#employee_table{
+    position: absolute;
+    top: 2%;
+    left: 4%;
+}
+#employee_header{
+
+}
+
+
+
+
+
+
+

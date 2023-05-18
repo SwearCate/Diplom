@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://api-maps.yandex.ru/2.1/?coordorder=latlong&amp;apikey=3245f75b-f1e7-4de6-bcc8-a3d7cb991f4c&lang=ru_RU" type="text/javascript"></script>
+    <script src="includes/javascript/calendar_button.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://yandex.st/bootstrap/2.2.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+    <script src="includes/javascript/test.js"></script>
+    <script src="includes/javascript/Calendar.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800" rel="stylesheet">
+
+    <!-- jsCalendar -->
+    <link rel="stylesheet" type="text/css" href="jsCalendar_v1.4.4/source/jsCalendar.css">
+    <script type="text/javascript" src="jsCalendar_v1.4.4/source/jsCalendar.js"></script>
+    <script type="text/javascript" src="jsCalendar_v1.4.4/source/jsCalendar.lang.ru.js"></script>
+
+</head>
+<body>
+<div id="container">
+    <div id="search_container">
+        <input type="text" id="suggest" class="input" placeholder="Поиск мест и адресов">
+        <button type="submit" id="button"><img src="images/search.svg"></button>
+    </div>
+    <div id="map">
+        <div id="header_button_container">
+            <nav id="header">
+                <a href="#" id="header_link">
+                        <button form="employee_button"><img src="images/employees.png"></button>
+                <a href="#" id="header_link1">
+                    <button onclick="chpok('calendar')"> <img src="images/calendar.png"></button>
+                </a>
+                </a>
+                <a href="#" id="header_link2">
+                    <button onclick="chpok('login_container')"> <img src="images/profile.png"></button>
+                </a>
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="calendar">
+    <div class="auto-jsCalendar"
+         data-language="ru"
+         data-day-format="DDD">
+    </div>
+    </div>
+<div id="login_container">
+    <div id="login_form_container">
+        <p id="form_text" style="z-index: 3000">Вход</p>
+            <form id="login_form" method="post" action="../api/auth/signin">
+                <input id="email" type="text" size="44" placeholder="Введите логин" name="username">
+                <input id="password" type="password" size="44" placeholder="Введите пароль" name="password">
+            </form>
+        <button onclick="chpok('login_container')" id="form_close"><img src="images/XCircle.png"></button>
+        <button form="login_form" id="login_button" type="submit" >Войти</button>
+        <script src="../app/controllers/auth.controller.js"></script>
+    </div>
+    <form action="/employee/list" id="employee_button"></form>
+</div>
+</div>
+</body>
+</html>
