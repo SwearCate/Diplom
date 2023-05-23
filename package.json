@@ -1,13 +1,12 @@
 {
-  "name": "CRUD",
+  "name": "diplom",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Swear",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -24,5 +23,17 @@
   },
   "devDependencies": {
     "nodemon": "^1.19.2"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SwearCate/Diplom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SwearCate/Diplom/issues"
+  },
+  "homepage": "https://github.com/SwearCate/Diplom#readme",
+  "description": ""
 }
